@@ -1,0 +1,23 @@
+{
+  "manifest_version": 2,
+  "name": "CodeForces Filter",
+  "version": "0.1.2",
+  "content_scripts": [
+    {
+      "matches": ["https://codeforces.com/blog/*/*"],
+      "js": ["content.js"]
+    }
+  ],
+  "icons": {
+    "128": "rsz_icon2.png"
+  },
+  "browser_action": {
+    "default_popup": "popup.html"
+  },
+  "permissions": [
+    "storage"
+  ],
+  "description": "Removes comments of low-rated users. Choose color in popup menu, comments by users of color < chosen_color will be removed."
+
+
+}
